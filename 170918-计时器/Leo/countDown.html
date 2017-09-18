@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by swpuLeo (http://jsbin.com/dokagom/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+<body>
+<div id="displayTime"></div>
+<script id="jsbin-javascript">
+    window.onload = function(){
+        (function time(argu_hour){
+            var d_hour = argu_hour,
+                d_min = 0,
+                d_sec = 0;
+
+            var ms = 0;
+            ms = argu_hour * 3600000;
+
+            var timeoutId = null;
+            timeoutId = setInterval(countTime, 1000);
+
+            function countTime(){
+                ms -= 1000;
+
+                d_hour = parseInt(ms/3600000)%60;
+                d_min = parseInt(ms/60000)%60;
+                d_sec = parseInt(ms/1000)%60;
+
+                var dT = document.getElementById('displayTime');
+                dT.innerHTML = '还剩余: ' + d_hour + ' 小时 ' + d_min + ' 分钟 ' + d_sec + ' 秒 ';
+
+            }
+        }(2));
+    }
+
+</script>
+</body>
+</html>
