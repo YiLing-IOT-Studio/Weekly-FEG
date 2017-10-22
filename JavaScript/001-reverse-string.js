@@ -1,9 +1,9 @@
 // Use IIFE to prevent global namespace for pollution among Methods
 
 /***************************
-*   Method 1 - Best Practice
-*
-* */
+ *   Method 1 - Best Practice
+ *
+ * */
 
 (function(){
     function reverseString(str) {
