@@ -20,3 +20,34 @@
     }
     replaceSpace("Hello world");
 })();
+
+
+/***************************
+ *   Method 2
+ *   By Leo
+ * */
+
+// 77ms 7934K
+(function () {
+    function replaceSpace(str) {
+        return str.split('').map(function (t) {
+            if (t === ' '){
+                t = '%20';
+            }
+            return t;
+        }).join('');
+    }
+})();
+
+
+/***************************
+ *   Method 2
+ *   By Leo
+ * */
+
+// <1ms <1K
+(function () {
+    function replaceSpace(str) {
+        return str.replace(/\s/g, '%20');
+    }
+})();
