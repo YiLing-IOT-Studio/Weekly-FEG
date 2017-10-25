@@ -1,6 +1,12 @@
 # JavaScript
 
 
+### 006. 区分 Object
+
+> 在 JavaScript 中，不止一种数据类型的值为 "object"，请你把它们区分出来。
+
+[查看代码](https://github.com/YiLing-IOT-Studio/Weekly-FEG/blob/master/JavaScript/005-detect-object.js)
+
 
 ### 005. 数组排序
 
