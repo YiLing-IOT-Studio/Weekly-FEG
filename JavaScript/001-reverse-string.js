@@ -2,7 +2,7 @@
 
 /***************************
  *   Method 1 - Best Practice
- *
+ *   By Leo
  * */
 
 (function(){
