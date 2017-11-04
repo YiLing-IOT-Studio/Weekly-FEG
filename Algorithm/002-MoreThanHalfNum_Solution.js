@@ -6,9 +6,8 @@
  * */
 
 /*
-* @param: num String
-* @param: k Int
-* @return: String
+* @param: numbers Array
+* @return: Int
 */
 (function () {
     function MoreThanHalfNum_Solution(numbers)
