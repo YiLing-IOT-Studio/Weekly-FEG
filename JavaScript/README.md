@@ -1,6 +1,8 @@
 # JavaScript
 
 
+
+
 ### 006. 区分 Object
 
 > 在 JavaScript 中，不止一种数据类型的值为 "object"，请你把它们区分出来。
