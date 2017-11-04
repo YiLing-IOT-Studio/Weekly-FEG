@@ -25,3 +25,31 @@
         }
     }
 })();
+
+/***************************
+ *   Method 2
+ *   By 812913
+ * */
+
+(function () {
+    function timing(){
+       var s=0,m,h;
+        var mysetInterval=setInterval(timer, 1000);
+
+        function timer(){
+           s++;
+            if(s>=60) {
+                s=0;
+                m++;
+            }
+            if(m>=60) {
+                m=0;
+                h++;
+            }
+            time.innerHTML=checkTime(h)+':'+checkTime(m)+':'+checkTime(s);
+        }
+        function checkTime(i){ //将0-9的数字前面加上0，例1变为01
+            return  i<10 ? "0"+i:i;
+        }
+    }
+})();

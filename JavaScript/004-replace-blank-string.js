@@ -51,3 +51,18 @@
         return str.replace(/\s/g, '%20');
     }
 })();
+
+
+
+/***************************
+ *   Method 3
+ *   By diadai
+ * */
+
+//66ms  7932k
+(function () {
+    function replaceSpace(str)
+    {
+        return str.split(" ").join("%20");
+    }
+})();
